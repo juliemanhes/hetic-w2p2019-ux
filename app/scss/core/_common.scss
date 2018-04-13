@@ -12,7 +12,6 @@ body {
 .container {
     position: relative;
 }
-
 .h2 {
     font-size: 50px; 
 }
@@ -21,7 +20,7 @@ body {
 	position: relative;
 	display: block;
 	&:after {
-	content: '';
+		content: '';
 		position: absolute;
 		height: 4px;
 		background: $yellow;
