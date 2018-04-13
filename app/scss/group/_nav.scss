@@ -3,30 +3,30 @@
   z-index: 10;
   top: 50%;
   left: 0;
-  width: 70px;
+  width: 90px;
   transform: translateY(-50%);
+  @media (max-width: 1199px){
+    display: none;
+  }
 }
 .nav--wrap {
-  list-style-type: disc;
   font-size: 40px;
 }
 .nav--wrap-item {
   display: block;
   width: 100%;
   padding: 20px 5px;
-  text-align: center;
-  color: blue;
+  text-align: right;
+  color: white;
+  transition: 0.5s;
+  font-family: $font;
   &:after {
-    content: '';
-    width: 15px;
-    height: 15px; 
-    background-color: yellow;
+    content: "";
+    width: 10px;
+    height: 10px;
+    margin-left: 10px;
+    border-radius: 100%;
+    background-color: purple;
+    display: inline-block;
   }
-}
-
-.nav--wrap-item {
-}
-
-.nav--wrap-item a {
-  text-decoration: none;
 }
