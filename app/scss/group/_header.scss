@@ -10,8 +10,7 @@
     background: $background;
     box-shadow: 1px 1px 1px $cta-color; 
     &--nav-burger {
-        /* display: none;*/
-        @media screen and (max-width: 750px) {
+        @media screen and (max-width: 768px) {
             display: block;
             cursor: pointer;
             div {
@@ -39,10 +38,12 @@
             }
         }
     }
-    @media (max-width: 480px){
-        top: 0; 
-    }
+
+    // @media (max-width: 480px){
+    //     top: 0; 
+    // }
 }
+
 .header--logo {
     padding-top: 10px;
     width: 195px;
@@ -69,6 +70,7 @@
         width: 100%;
         height: auto;
         padding: 10px 0;
+        z-index: 99999;
         background: #fff;
         border-top:1px solid $violet;
         border-bottom:1px solid $violet;
@@ -80,7 +82,7 @@
         border-radius: 40px;
         cursor: pointer;
         background-color: $cta-color; 
-        @media screen and (max-width: 750px) {
+        @media screen and (max-width: 768px) {
             width: 70%;
             margin: 10px auto;
             background: none;
@@ -91,12 +93,14 @@
             border-radius: 0;
         }
     }
-    &-1 {
-      margin-right: 60px;
-        @media screen and (max-width: 750px) {
+    &-1, &-2 {
+        @media screen and (min-width: 769px) {
+            margin-right: 60px;
+        }
+        @media screen and (max-width: 768px) {
             border-bottom: 1px solid $violet;
         }
-        & a {
+        a {
             color: #FFF;
             &:hover {
                 color: $cta-color;
@@ -104,10 +108,6 @@
         }
         &:hover {
             background-color: #FFF;
-            // & a {
-            //     color: $cta-color;
-            // }
-            
         }
     }
 }

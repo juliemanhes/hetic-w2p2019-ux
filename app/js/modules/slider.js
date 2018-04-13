@@ -20,11 +20,13 @@ export default class slider {
       this._h += 100;
     } else {
       clearInterval(this._onSlider);
+      this._count = 0;
+      this._h = 0;
     }
   }
 
   _onLoad() {
-    setInterval(this._onSlider, 1200);
+    setInterval(this._onSlider, 2300);
   }
 
   _addListener() {

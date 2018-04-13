@@ -7,7 +7,6 @@ var pourcentageY = 0;
 window.addEventListener("scroll", function() {
   let scrollHauteur = window.scrollY;
   pourcentageY = Math.round((scrollHauteur /= scrollTotal) * 100);
-  console.log(pourcentageY);
 
   if (pourcentageY == 0 || pourcentageY == 12) {
     i = 0;
@@ -23,7 +22,7 @@ window.addEventListener("scroll", function() {
     i = 1;
     navItem[i].style.fontSize = "40px";
     for (var y = 0; y < navItem.length; y++) {
-      navItem[y].style.color = "purple";
+      navItem[y].style.color = "#6D3EFF";
     }
   } else if (13 > pourcentageY || pourcentageY > 39) {
     navItem[1].style.fontSize = "20px";
@@ -42,7 +41,7 @@ window.addEventListener("scroll", function() {
   if (pourcentageY == 66) {
     i = 3;
     for (var y = 0; y < navItem.length; y++) {
-      navItem[y].style.color = "purple";
+      navItem[y].style.color = "#6D3EFF";
     }
     navItem[i].style.fontSize = "40px";
   } else if (pourcentageY < 66) {
