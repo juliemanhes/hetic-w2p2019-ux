@@ -61,3 +61,4 @@ function type2() {
         setTimeout(typeWriter, speed);
       }
     }
+}
