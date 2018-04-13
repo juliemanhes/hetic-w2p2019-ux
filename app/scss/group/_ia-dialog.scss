@@ -7,10 +7,17 @@
     height: 300px; 
     font-size: 50px; 
 }
-.ia-dialog--content {
-    position: absolute; 
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -50%);
-   
+.ia-dialog1 {
+    height: 130px; 
+    padding: 30px 0;
+}
+.ia-dialog1--wrap {
+    // position: fixed; 
+    // top: 20%; 
+    // left: 50%; 
+    // transform: translateY(-50%);
+}
+.ia-dialog1--content {
+    text-align: center;
+    
 }
