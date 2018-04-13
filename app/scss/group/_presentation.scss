@@ -1,22 +1,37 @@
 .presentation {
     width: 89%; 
     padding: 30px 20px;
-    margin: 0 auto;
+    margin-left: 11% ;
+    background-image: url('../img/phone-about.jpg');
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color:$violet;
     .h2 {
+        display: inline;
         padding-bottom: 58px;
         &:after {
-            width: 60px;
-            bottom: 45%;
-            left: 15%;
+            width: 70px;
+            // bottom: 45%;
+            // left: 15%;
+            right: -10%;
+            margin: auto;
+            top:48%;
         }
-        
+    }
+    // &--image {
+    //     width: 30%;
+    // }
+    &--content {
+        width: 60%;
     }
 }
 
 .presentation--wrapper {
+    display: flex;
     padding: 50px 0;
     p {
-        font-size: 24px; 
+        font-size: 1.25rem; 
         padding: 10px 0;
         
     }

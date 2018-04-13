@@ -18,14 +18,13 @@ export default class slider {
         "translate3d(0%, -" + this._h + "%, 0px)";
       this._count++;
       this._h += 100;
-      //   console.log(this._dom.items.length);
     } else {
       clearInterval(this._onSlider);
     }
   }
 
   _onLoad() {
-    setInterval(this._onSlider, 1000);
+    setInterval(this._onSlider, 1200);
   }
 
   _addListener() {
@@ -36,6 +35,5 @@ export default class slider {
     this._dom = {};
     this._dom.list = document.querySelector(".slider__list");
     this._dom.items = document.querySelectorAll(".slider__item");
-    // console.log(this._dom.items);
   }
 }
