@@ -37,10 +37,9 @@ function type1() {
 
   var callType = function() {
     window.addEventListener("resize", function() {
-      console.log(window.scrollY);
       var windowWidth = document.body.clientWidth;
       if (windowWidth > 768) {
-        scrollIndicator = 329;
+        scrollIndicator = 290;
       } else {
         scrollIndicator = 0;
       }
@@ -72,7 +71,7 @@ function type2() {
   var speed = 50;
 
   var callType = function() {
-    if (window.scrollY >= 935) {
+    if (window.scrollY >= 835) {
       typeWriter();
       window.removeEventListener("scroll", callType);
     }

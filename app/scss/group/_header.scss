@@ -37,10 +37,25 @@
         transition: 0.5s;
       }
     }
+    @media (max-width: 330px) {
+        div {
+            top: 15px;
+          }
+          .burger-1 {
+            transition: 0.5s;
+          }
+          .burger-2 {
+            top: 22px;
+          }
+          .burger-3 {
+            top: 29px;
+          }
+    }
   }
   @media (max-width: 480px) {
     top: 0;
   }
+  
 }
 .header--logo {
   padding-top: 10px;
@@ -73,8 +88,7 @@
     border-top: 1px solid $violet;
     border-bottom: 1px solid $violet;
   }
-  &-1,
-  &-2 {
+  &-1, &-2 {
     width: 180px;
     padding: 5px 0;
     text-align: center;
@@ -91,22 +105,22 @@
       text-align: left;
       border-radius: 0;
     }
-  }
-  &-1 {
     @media screen and (min-width: 769px) {
-      margin-right: 60px;
+        margin-right: 60px;
     }
     @media screen and (max-width: 768px) {
-      border-bottom: 1px solid $violet;
+        border-bottom: 1px solid $violet;
     }
     a {
-      color: #fff;
-      &:hover {
-        color: $cta-color;
-      }
+        @media screen and (min-width: 769px) {
+            color: #FFF;
+        }
+        &:hover {
+            color: $cta-color;
+        }
     }
     &:hover {
-      background-color: #fff;
+        background-color: #FFF;
     }
-  }
+}
 }
