@@ -4,6 +4,10 @@ $yellow:#FFE82B;
 $font:'Poppins', sans-serif;
 $font-logo: 'Righteous', cursive;
 
+body {
+	font-family: $font;
+}
+
 .container {
     position: relative;
 }

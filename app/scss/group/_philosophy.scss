@@ -1,5 +1,6 @@
 .our-philosophy--section {
 	font-family: $font;
+	display: flex;
 	padding: 80px 0;
 	color:$white;
 	margin: 0 auto;
@@ -13,8 +14,11 @@
 		}
 	}
 	&-container {
-		width: 89%;
+		width: 60%;
 		margin: 0 auto;
+	}
+	&-image {
+		width: 30%;
 	}
 	&-main_title {
 		font-size: 50px;
