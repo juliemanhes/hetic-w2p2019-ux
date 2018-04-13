@@ -1,9 +1,17 @@
 .introduction {
   position: relative;
-  height: 500px;
+  height: 95vh;
   font-size: 30px;
-  background: $background; 
+  background: $background;
   background: $background-o; 
+}
+.introduction-bg {
+  height: 100%; 
+  width: 100%; 
+  background-size: contain;
+  background-image: url('../img/phone-intro.png'); 
+  background-repeat: no-repeat;
+  background-position: right center;
 }
 /* ---
 ------- SLIDER PART
@@ -17,6 +25,7 @@
   background-color: transparent;
   height: 100px;
   overflow: hidden;
+  
 }
 
 .slider__list {
