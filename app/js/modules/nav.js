@@ -18,33 +18,42 @@ window.addEventListener("scroll", function() {
     navItem[0].style.fontSize = "20px";
   }
 
-  if (pourcentageY == 13 || pourcentageY == 39) {
+  if (pourcentageY == 13 || pourcentageY == 32) {
     i = 1;
     navItem[i].style.fontSize = "40px";
     for (var y = 0; y < navItem.length; y++) {
       navItem[y].style.color = "purple";
     }
-  } else if (13 > pourcentageY || pourcentageY > 39) {
+  } else if (13 > pourcentageY || pourcentageY > 32) {
     navItem[1].style.fontSize = "20px";
   }
 
-  if (pourcentageY == 40 || pourcentageY == 65) {
+  if (pourcentageY == 33 || pourcentageY == 64) {
     i = 2;
     for (var y = 0; y < navItem.length; y++) {
       navItem[y].style.color = "white";
     }
-    navItem[i].style.fontSize = "40px";
-  } else if (40 > pourcentageY || pourcentageY > 65) {
+    if (pourcentageY == 33 || pourcentageY == 51) {
+      navItem[i].style.fontSize = "40px";
+    }
+  } else if (33 > pourcentageY || pourcentageY > 51) {
     navItem[2].style.fontSize = "20px";
   }
 
-  if (pourcentageY == 66) {
+  if (pourcentageY == 52 || pourcentageY == 64) {
     i = 3;
+    navItem[i].style.fontSize = "40px";
+  } else if (52 > pourcentageY || pourcentageY > 64) {
+    navItem[3].style.fontSize = "20px";
+  }
+
+  if (pourcentageY == 65) {
+    i = 4;
     for (var y = 0; y < navItem.length; y++) {
       navItem[y].style.color = "purple";
     }
     navItem[i].style.fontSize = "40px";
-  } else if (pourcentageY < 66) {
-    navItem[3].style.fontSize = "20px";
+  } else if (pourcentageY < 65) {
+    navItem[4].style.fontSize = "20px";
   }
 });
