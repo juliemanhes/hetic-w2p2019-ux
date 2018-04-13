@@ -18,14 +18,15 @@ export default class slider {
         "translate3d(0%, -" + this._h + "%, 0px)";
       this._count++;
       this._h += 100;
-      //   console.log(this._dom.items.length);
     } else {
       clearInterval(this._onSlider);
+      this._count = 0;
+      this._h = 0;
     }
   }
 
   _onLoad() {
-    setInterval(this._onSlider, 1000);
+    setInterval(this._onSlider, 2300);
   }
 
   _addListener() {
