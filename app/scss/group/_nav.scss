@@ -5,7 +5,9 @@
   left: 0;
   width: 90px;
   transform: translateY(-50%);
-}
+  @media (max-width: 1199px){
+    display: none;
+  }
 .nav--wrap {
   font-size: 40px;
 }

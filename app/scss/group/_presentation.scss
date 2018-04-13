@@ -8,6 +8,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     color:$violet;
+
     .h2 {
         display: inline;
         padding-bottom: 58px;
@@ -21,11 +22,14 @@
             top:48%;
         }
     }
-    &--image {
-        width: 30%;
-    }
     &--content {
         width: 60%;
+    }
+    @media (max-width: 1199px){
+        height: 700px;
+        margin-left: 5%;
+        background-position: center bottom;
+        background-size: 30%; 
     }
 }
 

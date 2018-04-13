@@ -4,6 +4,9 @@
   font-size: 30px;
   background: $background;
   background: $background-o; 
+  @media (max-width: 1199px){
+    height: 60vh;
+  }
 }
 .introduction-bg {
   height: 100%; 
@@ -12,7 +15,11 @@
   background-image: url('../img/phone-intro.png'); 
   background-repeat: no-repeat;
   background-position: right center;
+  @media (max-width: 1199px){
+    background-position: right top;
+  }
 }
+
 /* ---
 ------- SLIDER PART
 --- */
@@ -25,7 +32,10 @@
   background-color: transparent;
   height: 100px;
   overflow: hidden;
-  
+  @media (max-width: 1199px){
+    left: 1%;
+    top: 83%;
+  }
 }
 
 .slider__list {
