@@ -10,7 +10,7 @@
     background: $background;
     box-shadow: 1px 1px 1px $cta-color; 
     &--nav-burger {
-        @media screen and (max-width: 750px) {
+        @media screen and (max-width: 768px) {
             display: block;
             cursor: pointer;
             div {
@@ -56,7 +56,7 @@
     height: 50px; 
     transition:0.8s;
     color: #FFF;
-    @media screen and (max-width: 750px) {
+    @media screen and (max-width: 768px) {
         position: absolute;
         left: 0;
         display: block;
@@ -78,7 +78,7 @@
         border-radius: 40px;
         cursor: pointer;
         background-color: $cta-color; 
-        @media screen and (max-width: 750px) {
+        @media screen and (max-width: 768px) {
             width: 70%;
             margin: 10px auto;
             background: none;
@@ -90,8 +90,10 @@
         }
     }
     &-1 {
-      margin-right: 60px;
-        @media screen and (max-width: 750px) {
+        @media screen and (min-width: 768px) {
+            margin-right: 60px;
+        }
+        @media screen and (max-width: 768px) {
             border-bottom: 1px solid $violet;
         }
         a {
@@ -102,9 +104,6 @@
         }
         &:hover {
             background-color: #FFF;
-            /* & a {*/
-            /*     color: $cta-color;*/
-            /* }*/
         }
     }
 }
