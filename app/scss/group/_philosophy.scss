@@ -18,6 +18,15 @@
 		@media (max-width: 1199px){
 			margin-left: 5%; 
 		}
+		@media (max-width: 768px){
+			width: 100%; 
+			margin-left: 0; 
+			padding-left: 5%; 
+		}
+		@media (max-width: 480px){
+			width: 90%; 
+			margin: 0 auto;
+		}
 	}
 	&-image {
 		width: 30%;
@@ -60,6 +69,10 @@
 				border-color: transparent transparent transparent #1e196a;
 			}
 		}
+		@media (max-width: 480px){
+			width: 90%; 
+			margin: 0 0 0 5%; 
+		}
 	}
 }
 .our-philosophy--bg {
@@ -69,4 +82,7 @@
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: right bottom;
+	@media (max-width: 1199px){
+		background: none;
+	}
 }
