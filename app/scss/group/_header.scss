@@ -1,36 +1,110 @@
 .header {
-    position: fixed; 
-    z-index: 10;
-    width: 100vw;
-    height: 10vh; 
-    display: flex; 
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 30px; 
+  position: fixed;
+  z-index: 10;
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background: $background;
+  box-shadow: 1px 1px 1px $cta-color;
+  &--nav-burger {
+    /* display: none;*/
+    @media screen and (max-width: 750px) {
+      display: block;
+      cursor: pointer;
+      div {
+        width: 35px;
+        height: 4px;
+        content: "";
+        background: #fff;
+        top: 20px;
+        z-index: 20;
+        transition: 0.5s;
+        right: 5%;
+        border-radius: 15px;
+        position: fixed;
+      }
+      .burger-1 {
+        transition: 0.5s;
+      }
+      .burger-2 {
+        top: 28px;
+        transition: 0.5s;
+      }
+      .burger-3 {
+        top: 36px;
+        transition: 0.5s;
+      }
+    }
+  }
 }
 .header--logo {
-    padding-top: 10px;
-    width: 195px;
-    height: 67px;
-    img {
-        width: 100%; 
-    }
+  padding-top: 10px;
+  width: 195px;
+  height: 67px;
+  img {
+    width: 100%;
+  }
 }
 .header--buttons {
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center;
-    width: 20%; 
-    height: 50px; 
-    color: #FFF; 
-    &-1, &-2 {
-        padding: 10px 20px; 
-        border-radius: 40px;
-        cursor: pointer;
-        background-color: $cta-color; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+  height: 50px;
+  transition: 0.8s;
+  color: #fff;
+  @media screen and (max-width: 750px) {
+    position: absolute;
+    left: 0;
+    display: block;
+    right: 0;
+    margin-top: 110px;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+    background: #fff;
+    border-top: 1px solid $violet;
+    border-bottom: 1px solid $violet;
+  }
+  &-1,
+  &-2 {
+    width: 180px;
+    padding: 5px 0;
+    text-align: center;
+    border-radius: 40px;
+    cursor: pointer;
+    background-color: $cta-color;
+    @media screen and (max-width: 750px) {
+      width: 70%;
+      margin: 10px auto;
+      background: none;
+      color: $violet;
+      height: 50px;
+      padding: 10px 0;
+      text-align: left;
+      border-radius: 0;
     }
-}
-.header--back {
-    height: 65px; 
-    background-color: pink;
+  }
+  &-1 {
+    margin-right: 60px;
+    @media screen and (max-width: 750px) {
+      border-bottom: 1px solid $violet;
+    }
+    & a {
+      color: #fff;
+      &:hover {
+        color: $cta-color;
+      }
+    }
+    &:hover {
+      background-color: #fff;
+      // & a {
+      //     color: $cta-color;
+      // }
+    }
+  }
 }

@@ -2,23 +2,44 @@
     width: 89%; 
     padding: 30px 20px;
     margin: 0 auto;
+    margin-left: 11% ;
+    background-image: url('../img/phone-about.jpg');
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color:$violet;
+
     .h2 {
+        display: inline;
         padding-bottom: 58px;
+        display: inline;
         &:after {
-            width: 60px;
-            bottom: 45%;
-            left: 15%;
+            width: 70px;
+            // bottom: 45%;
+            // left: 15%;
+            right: -10%;
+            margin: auto;
+            top:48%;
         }
-        
+    }
+    &--content {
+        width: 60%;
+    }
+    @media (max-width: 1199px){
+        height: 700px;
+        margin-left: 5%;
+        background-position: center bottom;
+        background-size: 30%; 
     }
 }
 
 .presentation--wrapper {
+    display: flex;
     padding: 50px 0;
+    display: flex;
     p {
-        font-size: 24px; 
+        font-size: 1.25rem; 
         padding: 10px 0;
-        
     }
 }
 

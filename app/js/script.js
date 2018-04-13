@@ -1,3 +1,22 @@
+// BURGER NAV //
+
+var burger = document.querySelectorAll(".header--nav-burger div");
+var header = document.querySelector(".header--buttons");
+var burger1 = document.querySelector(".burger-1");
+var burger2 = document.querySelector(".burger-2");
+var burger3 = document.querySelector(".burger-3");
+
+if (burger) {
+  for (let i = 0; i < burger.length; i++) {
+    burger[i].addEventListener("click", function() {
+      header.classList.toggle("hidden");
+      burger1.classList.toggle("burger-transform-1");
+      burger2.classList.toggle("burger-transform-3");
+      burger3.classList.toggle("burger-transform-2");
+    });
+  }
+}
+
 /* IMPORT FILE COMPONENT/MODULE */
 
 import slider from "./modules/slider";
@@ -8,13 +27,25 @@ new slider();
 type1();
 type2();
 
+// console.log(document.body.clientWidth);
+
 function type1() {
   var i = 0;
   var txt = "Hé, coucou !";
   var speed = 50;
+  var scrollIndicator = 0;
 
   var callType = function() {
-    if (window.scrollY >= 329) {
+    window.addEventListener("resize", function() {
+      console.log(window.scrollY);
+      var windowWidth = document.body.clientWidth;
+      if (windowWidth > 768) {
+        scrollIndicator = 329;
+      } else {
+        scrollIndicator = 0;
+      }
+    });
+    if (window.scrollY >= scrollIndicator) {
       typeWriter();
       window.removeEventListener("scroll", callType);
     }
