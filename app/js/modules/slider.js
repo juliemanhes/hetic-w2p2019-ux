@@ -37,6 +37,5 @@ export default class slider {
     this._dom = {};
     this._dom.list = document.querySelector(".slider__list");
     this._dom.items = document.querySelectorAll(".slider__item");
-    // console.log(this._dom.items);
   }
 }
