@@ -65,19 +65,21 @@ function type2() {
       window.removeEventListener("scroll", callType);
     }
   };
-}
 
-var bot = document.querySelectorAll(".ia-dialog2");
-for (let i = 0; i < bot.length; i++) {
-  let parent = bot[i].parentNode;
-  window.addEventListener("scroll", callType);
-}
+  var bot = document.querySelectorAll(".ia-dialog2");
+  for (let i = 0; i < bot.length; i++) {
+    let parent = bot[i].parentNode;
+    window.addEventListener("scroll", callType);
+  }
 
-function typeWriter() {
-  if (j < txt2.length) {
-    document.querySelector(".ia-dialog2--content").innerHTML += txt2.charAt(j);
-    j++;
-    setTimeout(typeWriter, speed);
+  function typeWriter() {
+    if (j < txt2.length) {
+      document.querySelector(".ia-dialog2--content").innerHTML += txt2.charAt(
+        j
+      );
+      j++;
+      setTimeout(typeWriter, speed);
+    }
   }
 }
 

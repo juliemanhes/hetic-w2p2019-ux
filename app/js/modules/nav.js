@@ -7,7 +7,6 @@ var pourcentageY = 0;
 window.addEventListener("scroll", function() {
   let scrollHauteur = window.scrollY;
   pourcentageY = Math.round((scrollHauteur /= scrollTotal) * 100);
-  console.log(pourcentageY);
 
   if (pourcentageY == 0 || pourcentageY == 12) {
     i = 0;
