@@ -55,7 +55,7 @@ function js() {
  */
 
 function images() {
-  return gulp.src('app/img/**/*')
+  return gulp.src('app/img/*')
     .pipe(gulpif(isProd, imagemin({verbose: true})))
     .pipe(gulp.dest('dist/img'));
 }
@@ -98,6 +98,7 @@ gulp.task('default', gulp.parallel(html, scss, js, images, fonts, function(done)
     }
   });
 
+  gulp.watch('app/**/*.html', html);
   gulp.watch('app/**/*.scss', scss);
   gulp.watch('app/**/*.js', js);
   gulp.watch('app/**/*.html', html);
