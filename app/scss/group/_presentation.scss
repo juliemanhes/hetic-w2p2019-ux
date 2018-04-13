@@ -1,6 +1,7 @@
 .presentation {
     width: 89%; 
     padding: 30px 20px;
+    margin: 0 auto;
     margin-left: 11% ;
     background-image: url('../img/phone-about.jpg');
     background-position: right center;
@@ -10,6 +11,7 @@
     .h2 {
         display: inline;
         padding-bottom: 58px;
+        display: inline;
         &:after {
             width: 70px;
             // bottom: 45%;
@@ -19,9 +21,9 @@
             top:48%;
         }
     }
-    // &--image {
-    //     width: 30%;
-    // }
+    &--image {
+        width: 30%;
+    }
     &--content {
         width: 60%;
     }
@@ -30,10 +32,10 @@
 .presentation--wrapper {
     display: flex;
     padding: 50px 0;
+    display: flex;
     p {
         font-size: 1.25rem; 
         padding: 10px 0;
-        
     }
 }
 

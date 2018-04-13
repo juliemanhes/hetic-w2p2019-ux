@@ -16,12 +16,37 @@ body {
 .h2 {
     font-size: 50px; 
 }
+
+@media screen and (max-width: 750px) {
+    .hidden {
+        -webkit-transform:translateX(1600%);
+        transform:translateX(1600%);
+        transition:0.5s;
+    }
+}
+
+.burger-transform-1 {
+	-webkit-transform: rotate(45deg);
+	        transform: rotate(45deg);
+}
+
+.burger-transform-3 {
+	opacity: 0;
+}
+
+.burger-transform-2 {
+	-webkit-transform: rotate(-45deg);
+	        transform: rotate(-45deg);
+	margin-top: -15px;
+}
+
 a {
 	text-decoration: none;
 	&:hover {
 		color: $cta-color;
 	}
 }
+
 .yellow-subtitle {
 	position: relative;
 	display: block;
