@@ -6,7 +6,6 @@
   width: 90px;
   transform: translateY(-50%);
   background-color: transparent;
-  // border: 1px solid green;
 }
 .nav--wrap {
   font-size: 40px;
@@ -29,28 +28,3 @@
     display: inline-block;
   }
 }
-
-.bullet {
-}
-
-// .nav--wrap-item::after {
-//   content: "";
-//   width: 15px;
-//   height: 15px;
-//   border-radius: 100%;
-//   background-color: purple;
-// }
-
-// .nav--wrap-item a::after {
-//   content: "";
-//   width: 10px;
-//   height: 10px;
-//   margin-left: 10px;
-//   border-radius: 100%;
-//   background-color: purple;
-//   display: inline-block;
-// }
-//   list-style-type: circle;
-//   text-align: right;
-//   color: black;
-//   text-decoration: none;
