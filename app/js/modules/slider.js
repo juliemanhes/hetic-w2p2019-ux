@@ -1,40 +1,41 @@
 export default class slider {
-    constructor() {
-        this._createBound();
-        this._addListener();
-        this._grabDom();
+  constructor() {
+    this._createBound();
+    this._addListener();
+    this._grabDom();
 
-        this._count = 1;
-        this._h = 100;
+    this._count = 1;
+    this._h = 100;
+  }
+  _createBound() {
+    let arr = ["_onSlider", "_onLoad"];
+    arr.forEach(fn => (this[fn] = this[fn].bind(this)));
+  }
+
+  _onSlider() {
+    if (this._count < this._dom.items.length) {
+      this._dom.list.style.transform =
+        "translate3d(0%, -" + this._h + "%, 0px)";
+      this._count++;
+      this._h += 100;
+      //   console.log(this._dom.items.length);
+    } else {
+      clearInterval(this._onSlider);
     }
-    _createBound() {
-        let arr = ['_onSlider', '_onLoad']; 
-        arr.forEach((fn) => this[fn] = this[fn].bind(this))
-    }
+  }
 
-    _onSlider() {
-        if (this._count < this._dom.items.length) {
-            this._dom.list.style.transform = 'translate3d(0%, -' + this._h + '%, 0px)';
-            this._count++;
-            this._h += 100;
-        } else {
-            clearInterval(this._onSlider);
-        }
-    }
+  _onLoad() {
+    setInterval(this._onSlider, 1000);
+  }
 
-    _onLoad() {
-        setInterval(this._onSlider, 1000);
-    }
+  _addListener() {
+    window.addEventListener("load", this._onLoad);
+  }
 
-    _addListener() {
-        window.addEventListener('load', this._onLoad);
-    }
-
-    _grabDom() {
-
-        this._dom = {};
-        this._dom.list = document.querySelector('.slider__list');
-        this._dom.items = document.querySelectorAll('.slider__item');
-    }
-
+  _grabDom() {
+    this._dom = {};
+    this._dom.list = document.querySelector(".slider__list");
+    this._dom.items = document.querySelectorAll(".slider__item");
+    // console.log(this._dom.items);
+  }
 }

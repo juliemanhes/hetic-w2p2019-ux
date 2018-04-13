@@ -1,21 +1,28 @@
 .nav {
-    position: fixed; 
-    z-index: 10;
-    top: 50%; 
-    left: 0; 
-    width: 70px; 
-    transform: translateY(-50%); 
-    background-color: transparent; 
-    border: 1px solid green; 
+  position: fixed;
+  z-index: 10;
+  top: 50%;
+  left: 0;
+  width: 70px;
+  transform: translateY(-50%);
+  background-color: transparent;
+  // border: 1px solid green;
 }
 .nav--wrap {
-    list-style-type: disc;
-    font-size: 40px;
+  list-style-type: disc;
+  font-size: 40px;
 }
 .nav--wrap-item {
-    display: block;
-    width: 100%; 
-    padding: 20px 5px;
-    text-align: center;
-    color: blue; 
+  display: block;
+  width: 100%;
+  padding: 20px 5px;
+  text-align: center;
+  color: blue;
+}
+
+.nav--wrap-item {
+}
+
+.nav--wrap-item a {
+  text-decoration: none;
 }

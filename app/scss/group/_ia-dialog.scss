@@ -1,23 +1,24 @@
 .ia-dialog {
     position: relative;
-    background-image: url('../img/cloud.jpeg'); 
+    background-color: #000;
+    background-image: url('../img/voice.png'); 
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
+    background-position: center;
     background-attachment: fixed;
     height: 300px; 
     font-size: 50px; 
 }
-.ia-dialog1 {
+.ia-dialog1, .ia-dialog2 {
     height: 130px; 
     padding: 30px 0;
 }
-.ia-dialog1--wrap {
-    // position: fixed; 
-    // top: 20%; 
-    // left: 50%; 
-    // transform: translateY(-50%);
+.contain {
+    position: relative; 
 }
-.ia-dialog1--content {
+.ia-dialog1--wrap {
+}
+.ia-dialog1--content, .ia-dialog2--content {
     text-align: center;
-    
+    color: #FFF; 
 }
