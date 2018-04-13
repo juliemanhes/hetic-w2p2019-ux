@@ -73,8 +73,9 @@ function fonts() {
 * HTML
 */
 function html() {
-  return gulp.src('app/**/*.html')
-  .pipe(gulp.dest('dist/'));
+  return gulp.src('app/*.html')
+  .pipe(gulp.dest('dist/'))
+  .pipe(sync.stream());
 }
 
 /**
@@ -99,6 +100,7 @@ gulp.task('default', gulp.parallel(html, scss, js, images, fonts, function(done)
 
   gulp.watch('app/**/*.scss', scss);
   gulp.watch('app/**/*.js', js);
+  gulp.watch('app/**/*.html', html);
 
   done();
 }));
