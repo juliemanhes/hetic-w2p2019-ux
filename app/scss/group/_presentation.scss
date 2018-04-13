@@ -15,8 +15,6 @@
         display: inline;
         &:after {
             width: 70px;
-            // bottom: 45%;
-            // left: 15%;
             right: -10%;
             margin: auto;
             top:48%;
@@ -31,6 +29,26 @@
         background-position: center bottom;
         background-size: 30%; 
     }
+    @media (max-width: 768px){
+        height: 530px;
+        background: none;
+        &--content {
+            width: 100%;
+        }
+    }
+    @media (max-width: 480px){
+        height: 570px;
+        background: none;
+        padding: 0; 
+        &--content {
+            width: 100%;
+            p{
+                &:first-child {
+                    margin-top: 30px;
+                }
+            }
+        }
+	}
 }
 
 .presentation--wrapper {
@@ -40,6 +58,12 @@
     p {
         font-size: 1.25rem; 
         padding: 10px 0;
+        @media (max-width: 480px){
+            &.first-p {
+                padding-top: 30px;
+            }
+        }
     }
+    
 }
 

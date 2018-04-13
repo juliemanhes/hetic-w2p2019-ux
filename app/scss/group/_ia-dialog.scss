@@ -8,10 +8,18 @@
     background-attachment: fixed;
     height: 300px; 
     font-size: 32px; 
+    @media (max-width: 1199px){
+        font-size: 24px; 
+        background-attachment: auto;
+	}
 }
 .ia-dialog1, .ia-dialog2 {
     height: 110px; 
     padding: 30px 0;
+    @media (max-width: 1199px){
+        height: 90px;
+        padding: 25px 0; 
+	}
 }
 .contain {
     position: relative; 

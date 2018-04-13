@@ -19,7 +19,7 @@
                 height: 4px;
                 content:'';
                 background: #fff;
-                top: 20px;
+                top: 30px;
                 z-index: 20;
                 transition: 0.5s;
                 right: 5%;
@@ -30,16 +30,19 @@
                 transition: 0.5s;
             }
             .burger-2 {
-                top: 28px;
+                top: 37px;
                 transition: 0.5s;
             }
             .burger-3 {
-                top: 36px;
+                top: 44px;
                 transition: 0.5s;
             }
         }
     }
-  
+    @media (max-width: 480px){
+        top: 0; 
+    }
+}
 .header--logo {
     padding-top: 10px;
     width: 195px;
@@ -56,7 +59,7 @@
     height: 50px; 
     transition:0.8s;
     color: #FFF;
-    @media screen and (max-width: 750px) {
+    @media screen and (max-width: 768px) {
         position: absolute;
         left: 0;
         display: block;
@@ -69,7 +72,6 @@
         background: #fff;
         border-top:1px solid $violet;
         border-bottom:1px solid $violet;
-
     }
     &-1, &-2 {
         width: 180px;
