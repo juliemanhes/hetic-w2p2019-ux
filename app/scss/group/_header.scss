@@ -1,0 +1,30 @@
+.header {
+    position: fixed; 
+    z-index: 10;
+    width: 100vw;
+    height: 10vh; 
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px; 
+    background: purple; 
+    border: 1px solid #000; 
+}
+
+.header--buttons {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    width: 20%; 
+    height: 50px; 
+    &-1, &-2 {
+        padding: 10px 20px; 
+        border-radius: 40px;
+        cursor: pointer;
+        background-color: orange; 
+    }
+}
+.header--back {
+    height: 90px; 
+    background-color: pink;
+}
