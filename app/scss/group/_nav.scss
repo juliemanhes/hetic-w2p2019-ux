@@ -18,6 +18,12 @@
   padding: 20px 5px;
   text-align: center;
   color: blue;
+  &:after {
+    content: '';
+    width: 15px;
+    height: 15px; 
+    background-color: yellow;
+  }
 }
 
 .nav--wrap-item {

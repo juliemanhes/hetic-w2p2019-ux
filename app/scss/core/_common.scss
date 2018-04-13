@@ -4,16 +4,14 @@ $yellow:#FFE82B;
 $cta-color: #6C17C5; 
 $font:'Poppins', sans-serif;
 $font-logo: 'Righteous', cursive;
-
+$background: linear-gradient(-225deg, #6B17C4 0%, #181A63 100%);
+$background-o: -o-linear-gradient(-225deg, #6B17C4 0%, #181A63 100%);
 body {
 	font-family: $font;
 }
-
 .container {
     position: relative;
-    
 }
-
 .h2 {
     font-size: 50px; 
 }
