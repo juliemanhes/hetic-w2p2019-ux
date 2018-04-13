@@ -22,7 +22,7 @@ window.addEventListener("scroll", function() {
     i = 1;
     navItem[i].style.fontSize = "40px";
     for (var y = 0; y < navItem.length; y++) {
-      navItem[y].style.color = "purple";
+      navItem[y].style.color = "#6D3EFF";
     }
   } else if (13 > pourcentageY || pourcentageY > 32) {
     navItem[1].style.fontSize = "20px";
@@ -50,7 +50,7 @@ window.addEventListener("scroll", function() {
   if (pourcentageY == 65) {
     i = 4;
     for (var y = 0; y < navItem.length; y++) {
-      navItem[y].style.color = "purple";
+      navItem[y].style.color = "#6D3EFF";
     }
     navItem[i].style.fontSize = "40px";
   } else if (pourcentageY < 65) {
