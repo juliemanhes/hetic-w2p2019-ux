@@ -12,14 +12,14 @@
 .slider {
     display: block;
     background-color: orange;
-    height: 500px; 
+    height: 600px; 
     overflow: hidden;
   }
   
   .slider__list {
     list-style: none;
     margin: 0 10px;
-    height: 50%;
+    height: 100%;
     transition: 2s ease-in-out;
   }
   
@@ -35,8 +35,6 @@
     }
   }
   
-  
-
   
   /* END SLIDER PART */
   

@@ -1,15 +1,18 @@
 .presentation {
+    width: 89%; 
     padding: 30px 20px;
+    margin: 0 auto;
+    .h2 {
+        padding-bottom: 58px;
+    }
 }
 
 .presentation--wrapper {
-    text-align: center;
     padding: 50px 0;
-    font-size: 24px; 
     p {
+        font-size: 24px; 
         padding: 10px 0;
-        &:last-child {
-            padding-top: 40px;
-        }
+        
     }
 }
+
