@@ -1,4 +1,43 @@
 .testimonials--section {
-	background: yellow;
 	display: flex;
+	justify-content:space-between;
+	font-family: $font;
+	text-align: center;
+	width: 80%;
+	margin: 35px auto;
+	img {
+		width: 228px;
+		height: 228px;
+		border-radius: 100%;
+		-o-object-fit: cover;
+		   object-fit: cover;
+	}
+	&-testimonial {
+		background: #FAFAFA;
+		width: 31%;
+		box-shadow: 0 2px 15px 5px rgba(174,174,174,0.50);
+		border-radius: 25px;
+		padding: 50px 0;
+	}
+	&-author {
+		font-size: 1rem;
+		margin-bottom: 20px;
+		color:$violet;
+		&:after {
+			width: 25px;
+			height: 4px;
+			right: -23%;
+			left: 0;
+			margin: auto;
+			bottom: 0;
+		}
+	}
+	&-testimonial-text {
+		color:$violet;
+		font-size: 0.9rem;
+		margin: 0 auto;
+		width: 80%;
+		text-align: left;
+	}
 }
+

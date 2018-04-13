@@ -25,7 +25,7 @@ export default class slider {
   }
 
   _onLoad() {
-    setInterval(this._onSlider, 2000);
+    setInterval(this._onSlider, 1000);
   }
 
   _addListener() {
