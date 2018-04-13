@@ -10,7 +10,6 @@
     background: $background;
     box-shadow: 1px 1px 1px $cta-color; 
     &--nav-burger {
-        /* display: none;*/
         @media screen and (max-width: 750px) {
             display: block;
             cursor: pointer;
@@ -39,6 +38,7 @@
             }
         }
     }
+}
   
 .header--logo {
     padding-top: 10px;
@@ -66,10 +66,10 @@
         width: 100%;
         height: auto;
         padding: 10px 0;
+        z-index: 99999;
         background: #fff;
         border-top:1px solid $violet;
         border-bottom:1px solid $violet;
-
     }
     &-1, &-2 {
         width: 180px;
@@ -94,7 +94,7 @@
         @media screen and (max-width: 750px) {
             border-bottom: 1px solid $violet;
         }
-        & a {
+        a {
             color: #FFF;
             &:hover {
                 color: $cta-color;
@@ -102,10 +102,9 @@
         }
         &:hover {
             background-color: #FFF;
-            // & a {
-            //     color: $cta-color;
-            // }
-            
+            /* & a {*/
+            /*     color: $cta-color;*/
+            /* }*/
         }
     }
 }
