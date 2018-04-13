@@ -9,12 +9,18 @@ $background-o: -o-linear-gradient(-225deg, #6B17C4 0%, #181A63 100%);
 
 body {
 	font-family: $font;
+	@media (max-width: 480px){
+		padding-top: 10vh;
+	}
 }
 .container {
     position: relative;
 }
 .h2 {
-    font-size: 50px; 
+	font-size: 50px; 
+	@media (max-width: 1199px){
+		font-size: 34px; 
+	}
 }
 
 @media screen and (max-width: 750px) {
